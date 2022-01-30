@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b50db686-e1d3-4dc6-a256-dbd5e704a4b6": {
+      "ProjectGuid": "b50db686-e1d3-4dc6-a256-dbd5e704a4b6",
+      "DisplayName": "MicroLibrary.API",
+      "ColorIndex": 0
+    },
+    "cd4de3a5-2698-483f-b092-0325834d3dc2": {
+      "ProjectGuid": "cd4de3a5-2698-483f-b092-0325834d3dc2",
+      "DisplayName": "MicroLibrary.Service",
+      "ColorIndex": 1
+    },
+    "af1050c7-1555-41fe-844c-369752e0bc59": {
+      "ProjectGuid": "af1050c7-1555-41fe-844c-369752e0bc59",
+      "DisplayName": "MicroLibrary.Infrastructure",
+      "ColorIndex": 2
+    },
+    "7c07a62a-eb88-4727-ba77-5bd86f7f5bd1": {
+      "ProjectGuid": "7c07a62a-eb88-4727-ba77-5bd86f7f5bd1",
+      "DisplayName": "MicroLibrary.API",
+      "ColorIndex": 3
+    },
+    "191c5b26-5bb7-47b9-80d7-a7f0673ebfde": {
+      "ProjectGuid": "191c5b26-5bb7-47b9-80d7-a7f0673ebfde",
+      "DisplayName": "Solution items",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroLibrary.API</name>
+    </assembly>
+    <members>
+        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.GetLibraryUsers">
+            <summary>
+            Get all library users
+            </summary>
+            <returns>200 OK response containing list of library users</returns>
+            <response code="200">List of library users</response>
+            <response code="400">Bad request</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.GetLibraryUser(System.Int32)">
+            <summary>
+            Get library user by id
+            </summary>
+            <param name="id"></param>
+            <returns>200 OK response containing a library user</returns>
+            <response code="200">List of library users</response>
+            <response code="400">Bad request</response>
+            <response code="404">Not found</response>
+        </member>
+        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.CreateLibraryUser(MicroLibrary.API.ViewModels.LibraryUserRequestVm)">
+            <summary>
+            Create library user
+            </summary>
+            <param name="libraryUserRequest">Library user view model</param>
+            <returns>201 containing created entity</returns>
+            <response code="201">Created library user</response>
+            <response code="400">Bad request</response>
+        </member>
+        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.UpdateLibraryUser(MicroLibrary.API.ViewModels.LibraryUserUpdateRequestVm)">
+            <summary>
+            Update library user
+            </summary>
+            <param name="libraryUserRequest">Library user view model</param>
+            <returns>200 OKy</returns>
+            <response code="200">Update successfull</response>
+            <response code="400">Bad request</response>
+            <response code="404">Entity for update not found</response>
+        </member>
+        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.DeleteLibraryUser(System.Int32)">
+            <summary>
+            Delete library user
+            </summary>
+            <param name="id">Library user id</param>
+            <returns>200 OK</returns>
+            <response code="200">Delete successfull</response>
+            <response code="400">Bad request</response>
+            <response code="404">Entity for delete not found</response>
+        </member>
+    </members>
+</doc>

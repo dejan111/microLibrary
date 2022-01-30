@@ -1,0 +1,15 @@
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\MicroLibrary.Infrastructure.deps.json
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\MicroLibrary.Infrastructure.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\ref\MicroLibrary.Infrastructure.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\MicroLibrary.Infrastructure.pdb
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.csproj.AssemblyReference.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.AssemblyInfoInputs.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.AssemblyInfo.cs
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.csproj.CoreCompileInputs.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\ref\MicroLibrary.Infrastructure.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.pdb
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\MicroLibrary.Infrastructure.runtimeconfig.json
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\bin\Debug\net5.0\MicroLibrary.Infrastructure.runtimeconfig.dev.json
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Infrastructure\obj\Debug\net5.0\MicroLibrary.Infrastructure.genruntimeconfig.cache

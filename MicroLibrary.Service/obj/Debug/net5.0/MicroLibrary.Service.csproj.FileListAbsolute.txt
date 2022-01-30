@@ -1,0 +1,15 @@
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\MicroLibrary.Service.deps.json
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\MicroLibrary.Service.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\ref\MicroLibrary.Service.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\MicroLibrary.Service.pdb
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.csproj.AssemblyReference.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.AssemblyInfoInputs.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.AssemblyInfo.cs
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.csproj.CoreCompileInputs.cache
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\ref\MicroLibrary.Service.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.pdb
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\MicroLibrary.Infrastructure.dll
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\bin\Debug\net5.0\MicroLibrary.Infrastructure.pdb
+C:\_DEJAN\Projects\MicroLibrary\MicroLibrary.Service\obj\Debug\net5.0\MicroLibrary.Service.csproj.CopyComplete
