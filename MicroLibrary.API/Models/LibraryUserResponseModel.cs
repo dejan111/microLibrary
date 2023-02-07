@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MicroLibrary.API.ViewModels
+namespace MicroLibrary.API
 {
-    public class LibraryUserResponseVm
+    public class LibraryUserResponseModel
     {
         public int Id { get; set; }
         public int LibraryId { get; set; }
@@ -16,6 +16,6 @@ namespace MicroLibrary.API.ViewModels
         public DateTime DateOfBirth { get; set; }
         public bool Active { get; set; }
 
-        public IEnumerable<LibraryUserContactResponseVm> LibraryUserContacts { get; set; }
+        public IEnumerable<LibraryUserContactResponseModel> LibraryUserContacts { get; set; }
     }
 }

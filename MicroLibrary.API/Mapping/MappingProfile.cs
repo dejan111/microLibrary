@@ -1,18 +1,17 @@
 ﻿using AutoMapper;
-using MicroLibrary.API.ViewModels;
-using MicroLibrary.Service.Dtos;
+using MicroLibrary.Service;
 
-namespace MicroLibrary.API.Mapping
+namespace MicroLibrary.API
 {
     public class MappingProfile : Profile
     {
         public MappingProfile()
         {
-            CreateMap<LibraryUserDto, LibraryUserResponseVm>();
-            CreateMap<LibraryUserContactDto, LibraryUserContactResponseVm>();
-            CreateMap<LibraryUserRequestVm, LibraryUserDto>();
-            CreateMap<LibraryUserContactRequestVm, LibraryUserContactDto>();
-            CreateMap<LibraryUserUpdateRequestVm, LibraryUserDto>();
+            CreateMap<LibraryUserDto, LibraryUserResponseModel>();
+            CreateMap<LibraryUserContactDto, LibraryUserContactResponseModel>();
+            CreateMap<LibraryUserRequestModel, LibraryUserDto>();
+            CreateMap<LibraryUserContactRequestModel, LibraryUserContactDto>();
+            CreateMap<LibraryUserUpdateRequestModel, LibraryUserDto>();
         }
     }
 }

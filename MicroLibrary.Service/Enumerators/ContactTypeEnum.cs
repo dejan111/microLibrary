@@ -1,4 +1,4 @@
-﻿namespace MicroLibrary.Service.Enumerators
+﻿namespace MicroLibrary.Service
 {
     public enum ContactTypeEnum
     {

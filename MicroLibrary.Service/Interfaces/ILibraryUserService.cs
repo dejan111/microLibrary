@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MicroLibrary.Service.Dtos;
 
-namespace MicroLibrary.Service.Interfaces
+namespace MicroLibrary.Service
 {
     public interface ILibraryUserService
     {

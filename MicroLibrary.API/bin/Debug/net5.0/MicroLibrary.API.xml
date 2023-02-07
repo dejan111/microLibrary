@@ -4,7 +4,7 @@
         <name>MicroLibrary.API</name>
     </assembly>
     <members>
-        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.GetLibraryUsers">
+        <member name="M:MicroLibrary.API.LibraryUserController.GetLibraryUsers">
             <summary>
             Get all library users
             </summary>
@@ -13,7 +13,7 @@
             <response code="400">Bad request</response>
             <response code="404">Not found</response>
         </member>
-        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.GetLibraryUser(System.Int32)">
+        <member name="M:MicroLibrary.API.LibraryUserController.GetLibraryUser(System.Int32)">
             <summary>
             Get library user by id
             </summary>
@@ -23,7 +23,7 @@
             <response code="400">Bad request</response>
             <response code="404">Not found</response>
         </member>
-        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.CreateLibraryUser(MicroLibrary.API.ViewModels.LibraryUserRequestVm)">
+        <member name="M:MicroLibrary.API.LibraryUserController.CreateLibraryUser(MicroLibrary.API.LibraryUserRequestModel)">
             <summary>
             Create library user
             </summary>
@@ -32,7 +32,7 @@
             <response code="201">Created library user</response>
             <response code="400">Bad request</response>
         </member>
-        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.UpdateLibraryUser(MicroLibrary.API.ViewModels.LibraryUserUpdateRequestVm)">
+        <member name="M:MicroLibrary.API.LibraryUserController.UpdateLibraryUser(MicroLibrary.API.LibraryUserUpdateRequestModel)">
             <summary>
             Update library user
             </summary>
@@ -42,7 +42,7 @@
             <response code="400">Bad request</response>
             <response code="404">Entity for update not found</response>
         </member>
-        <member name="M:MicroLibrary.API.Controllers.LibraryUserController.DeleteLibraryUser(System.Int32)">
+        <member name="M:MicroLibrary.API.LibraryUserController.DeleteLibraryUser(System.Int32)">
             <summary>
             Delete library user
             </summary>

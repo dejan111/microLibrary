@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using MicroLibrary.Infrastructure.Context;
 
-namespace MicroLibrary.Service.Services
+namespace MicroLibrary.Service
 {
     public abstract class ServiceBase
     {
-        public readonly MicroLibraryContext microLibraryContext;
-        public readonly IMapper mapper;
+        public readonly MicroLibraryContext _microLibraryContext;
+        public readonly IMapper _mapper;
 
         protected ServiceBase(MicroLibraryContext microLibraryContext, IMapper mapper)
         {
-            this.microLibraryContext = microLibraryContext;
-            this.mapper = mapper;
+            _microLibraryContext = microLibraryContext;
+            _mapper = mapper;
         }
     }
 }

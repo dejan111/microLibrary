@@ -1,7 +1,5 @@
-﻿using MicroLibrary.API.Mapping;
-using MicroLibrary.Infrastructure.Context;
-using MicroLibrary.Service.Interfaces;
-using MicroLibrary.Service.Services;
+﻿using MicroLibrary.Infrastructure.Context;
+using MicroLibrary.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,9 +30,7 @@ namespace MicroLibrary.API.Extensions
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services
-                .AddTransient<ILibraryUserService, LibraryUserService>();
-
+            services.AddTransient<ILibraryUserService, LibraryUserService>();
             return services;
         }
 
@@ -46,7 +42,6 @@ namespace MicroLibrary.API.Extensions
             });
 
             services.AddSingleton(mapperConfiguration.CreateMapper());
-
             return services;
         }
 
@@ -54,7 +49,7 @@ namespace MicroLibrary.API.Extensions
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy", 
+                options.AddPolicy("CorsPolicy",
                     builder =>
                         builder.AllowAnyOrigin()
                         .AllowAnyMethod()

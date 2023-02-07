@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace MicroLibrary.Infrastructure.Entities
+namespace MicroLibrary.Infrastructure
 {
     public partial class Rent
     {

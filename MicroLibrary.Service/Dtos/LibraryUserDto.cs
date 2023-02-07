@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MicroLibrary.Service.Dtos
+namespace MicroLibrary.Service
 {
     public class LibraryUserDto
     {
@@ -15,7 +15,7 @@ namespace MicroLibrary.Service.Dtos
         public string City { get; set; }
         public DateTime DateOfBirth { get; set; }
         public bool Active { get; set; }
-        
+
         public IEnumerable<LibraryUserContactDto> LibraryUserContacts { get; set; }
     }
 }

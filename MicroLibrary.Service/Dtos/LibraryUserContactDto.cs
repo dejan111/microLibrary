@@ -1,4 +1,4 @@
-﻿namespace MicroLibrary.Service.Dtos
+﻿namespace MicroLibrary.Service
 {
     public class LibraryUserContactDto
     {

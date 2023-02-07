@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MicroLibrary.API.ViewModels
+namespace MicroLibrary.API
 {
-    public class LibraryUserUpdateRequestVm
+    public class LibraryUserUpdateRequestModel
     {
         [Required]
         public int? Id { get; set; }

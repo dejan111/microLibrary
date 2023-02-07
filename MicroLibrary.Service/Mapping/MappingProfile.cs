@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using MicroLibrary.Infrastructure.Entities;
-using MicroLibrary.Service.Dtos;
+using MicroLibrary.Infrastructure;
 
-namespace MicroLibrary.Service.Mapping
+namespace MicroLibrary.Service
 {
     public class MappingProfile : Profile
     {

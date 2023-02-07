@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MicroLibrary.API.ViewModels
+namespace MicroLibrary.API
 {
-    public class LibraryUserContactRequestVm
+    public class LibraryUserContactRequestModel
     {
         [Required]
         public int LibraryUserId { get; set; }

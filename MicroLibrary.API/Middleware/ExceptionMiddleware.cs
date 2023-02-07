@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace MicroLibrary.API.Middleware
+namespace MicroLibrary.API
 {
     public class ExceptionMiddleware
     {
@@ -33,7 +33,7 @@ namespace MicroLibrary.API.Middleware
             }
         }
 
-        private Task HandleExceptionAsync(HttpContext context, Exception ex)
+        private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
             HttpStatusCode status;
             string message;

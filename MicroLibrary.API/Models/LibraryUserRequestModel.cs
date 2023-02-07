@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace MicroLibrary.API.ViewModels
+namespace MicroLibrary.API
 {
-    public class LibraryUserRequestVm
+    public class LibraryUserRequestModel
     {
         [Required]
         public int? LibraryId { get; set; }

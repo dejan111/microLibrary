@@ -1,41 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj": {}
+    "C:\\Projects\\microLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj": {}
   },
   "projects": {
-    "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj": {
+    "C:\\Projects\\microLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj",
+        "projectUniqueName": "C:\\Projects\\microLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj",
         "projectName": "MicroLibrary.API",
-        "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj",
+        "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.API\\MicroLibrary.API.csproj",
         "packagesPath": "C:\\Users\\dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.API\\obj\\",
+        "outputPath": "C:\\Projects\\microLibrary\\MicroLibrary.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/Microblink/_packaging/Microblink/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
-                "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj"
+              "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj"
               },
-              "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj": {
-                "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj"
+              "C:\\Projects\\microLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj": {
+                "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj"
               }
             }
           }
@@ -47,16 +45,16 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[12.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -65,7 +63,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -77,36 +76,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
+    "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj",
         "projectName": "MicroLibrary.Infrastructure",
-        "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj",
+        "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/Microblink/_packaging/Microblink/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -117,28 +114,28 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
@@ -147,7 +144,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -156,39 +154,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj": {
+    "C:\\Projects\\microLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj",
+        "projectUniqueName": "C:\\Projects\\microLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj",
         "projectName": "MicroLibrary.Service",
-        "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj",
+        "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.Service\\MicroLibrary.Service.csproj",
         "packagesPath": "C:\\Users\\dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Service\\obj\\",
+        "outputPath": "C:\\Projects\\microLibrary\\MicroLibrary.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/Microblink/_packaging/Microblink/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
-                "projectPath": "C:\\_DEJAN\\Projects\\MicroLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj"
+              "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\microLibrary\\MicroLibrary.Infrastructure\\MicroLibrary.Infrastructure.csproj"
               }
             }
           }
@@ -200,12 +196,12 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[12.0.0, )"
             }
           },
           "imports": [
@@ -214,7 +210,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -223,7 +220,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

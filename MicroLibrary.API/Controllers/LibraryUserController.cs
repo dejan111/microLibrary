@@ -1,24 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using MicroLibrary.API.ViewModels;
-using MicroLibrary.Service.Dtos;
-using MicroLibrary.Service.Interfaces;
+using MicroLibrary.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MicroLibrary.API.Controllers
+namespace MicroLibrary.API
 {
     [Route("api/[controller]")]
     [ApiController]
     public class LibraryUserController : ControllerBase
     {
-        private readonly IMapper mapper;
-        private readonly ILibraryUserService libraryUserService;
+        private readonly IMapper _mapper;
+        private readonly ILibraryUserService _libraryUserService;
 
         public LibraryUserController(IMapper mapper, ILibraryUserService libraryUserService)
         {
-            this.mapper = mapper;
-            this.libraryUserService = libraryUserService;
+            _mapper = mapper;
+            _libraryUserService = libraryUserService;
         }
 
         /// <summary>
@@ -29,11 +27,10 @@ namespace MicroLibrary.API.Controllers
         /// <response code="400">Bad request</response>
         /// <response code="404">Not found</response>
         [HttpGet]
-        public async Task<IActionResult> GetLibraryUsers()
+        public async ValueTask<IActionResult> GetLibraryUsers()
         {
-            IEnumerable<LibraryUserDto> libraryUsers = await libraryUserService.GetLibraryUsers();
-
-            return Ok(mapper.Map<IEnumerable<LibraryUserResponseVm>>(libraryUsers));
+            IEnumerable<LibraryUserDto> libraryUsers = await _libraryUserService.GetLibraryUsers();
+            return Ok(_mapper.Map<IEnumerable<LibraryUserResponseModel>>(libraryUsers));
         }
 
         /// <summary>
@@ -45,11 +42,11 @@ namespace MicroLibrary.API.Controllers
         /// <response code="400">Bad request</response>
         /// <response code="404">Not found</response>
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetLibraryUser(int id)
+        public async ValueTask<IActionResult> GetLibraryUser(int id)
         {
-            LibraryUserDto libraryUserDto = await libraryUserService.GetLibraryUser(id);
+            LibraryUserDto libraryUserDto = await _libraryUserService.GetLibraryUser(id);
 
-            return Ok(mapper.Map<LibraryUserResponseVm>(libraryUserDto));
+            return Ok(_mapper.Map<LibraryUserResponseModel>(libraryUserDto));
         }
 
         /// <summary>
@@ -60,17 +57,17 @@ namespace MicroLibrary.API.Controllers
         /// <response code="201">Created library user</response>
         /// <response code="400">Bad request</response>
         [HttpPost]
-        public async Task<IActionResult> CreateLibraryUser(LibraryUserRequestVm libraryUserRequest)
+        public async ValueTask<IActionResult> CreateLibraryUser(LibraryUserRequestModel libraryUserRequest)
         {
             if (libraryUserRequest is null || !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            LibraryUserDto libraryUserDto = mapper.Map<LibraryUserDto>(libraryUserRequest);
-            LibraryUserDto libraryUserDtoResponse = await libraryUserService.CreateLibraryUser(libraryUserDto);
+            LibraryUserDto libraryUserDto = _mapper.Map<LibraryUserDto>(libraryUserRequest);
+            LibraryUserDto libraryUserDtoResponse = await _libraryUserService.CreateLibraryUser(libraryUserDto);
 
-            return CreatedAtAction(nameof(CreateLibraryUser), mapper.Map<LibraryUserResponseVm>(libraryUserDto));
+            return CreatedAtAction(nameof(CreateLibraryUser), _mapper.Map<LibraryUserResponseModel>(libraryUserDto));
         }
 
         /// <summary>
@@ -82,22 +79,22 @@ namespace MicroLibrary.API.Controllers
         /// <response code="400">Bad request</response>
         /// <response code="404">Entity for update not found</response>
         [HttpPut]
-        public async Task<IActionResult> UpdateLibraryUser(LibraryUserUpdateRequestVm libraryUserRequest)
+        public async ValueTask<IActionResult> UpdateLibraryUser(LibraryUserUpdateRequestModel libraryUserRequest)
         {
             if (libraryUserRequest is null || !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            LibraryUserDto existingLibraryUserDto = await libraryUserService.GetLibraryUser(libraryUserRequest.Id.GetValueOrDefault());
+            LibraryUserDto existingLibraryUserDto = await _libraryUserService.GetLibraryUser(libraryUserRequest.Id.GetValueOrDefault());
 
             if (existingLibraryUserDto is null)
             {
                 return NotFound();
             }
 
-            LibraryUserDto libraryUserDto = mapper.Map<LibraryUserDto>(libraryUserRequest);
-            await libraryUserService.UpdateLibraryUser(libraryUserDto);
+            LibraryUserDto libraryUserDto = _mapper.Map<LibraryUserDto>(libraryUserRequest);
+            await _libraryUserService.UpdateLibraryUser(libraryUserDto);
 
             return Ok();
         }
@@ -111,16 +108,16 @@ namespace MicroLibrary.API.Controllers
         /// <response code="400">Bad request</response>
         /// <response code="404">Entity for delete not found</response>
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteLibraryUser(int id)
+        public async ValueTask<IActionResult> DeleteLibraryUser(int id)
         {
-            LibraryUserDto libraryUserDto = await libraryUserService.GetLibraryUser(id);
+            LibraryUserDto libraryUserDto = await _libraryUserService.GetLibraryUser(id);
 
             if (libraryUserDto is null)
             {
                 return NotFound();
             }
 
-            await libraryUserService.DeleteLibraryUser(id);
+            await _libraryUserService.DeleteLibraryUser(id);
 
             return Ok();
         }

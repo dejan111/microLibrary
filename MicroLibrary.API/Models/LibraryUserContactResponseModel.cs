@@ -1,6 +1,6 @@
-﻿namespace MicroLibrary.API.ViewModels
+﻿namespace MicroLibrary.API
 {
-    public class LibraryUserContactResponseVm
+    public class LibraryUserContactResponseModel
     {
         public int Id { get; set; }
         public int LibraryUserId { get; set; }

@@ -1,17 +1,13 @@
-﻿using System;
+﻿using AutoMapper;
+using MicroLibrary.Infrastructure;
+using MicroLibrary.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using AutoMapper;
-using MicroLibrary.Infrastructure.Context;
-using MicroLibrary.Infrastructure.Entities;
-using MicroLibrary.Service.Dtos;
-using MicroLibrary.Service.Enumerators;
-using MicroLibrary.Service.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
-namespace MicroLibrary.Service.Services
+namespace MicroLibrary.Service
 {
     public class LibraryUserService : ServiceBase, ILibraryUserService
     {
@@ -20,7 +16,7 @@ namespace MicroLibrary.Service.Services
 
         public async Task<IEnumerable<LibraryUserDto>> GetLibraryUsers()
         {
-            IEnumerable<LibraryUser> query = await microLibraryContext.LibraryUsers.AsNoTracking()
+            IEnumerable<LibraryUser> query = await _microLibraryContext.LibraryUsers.AsNoTracking()
                 .Where(x => !x.IsDeleted)
                 .Include(x => x.LibraryUserContacts).ToListAsync();
 
@@ -52,7 +48,7 @@ namespace MicroLibrary.Service.Services
 
         public async Task<LibraryUserDto> GetLibraryUser(int id)
         {
-            LibraryUser libraryUser = await microLibraryContext.LibraryUsers.AsNoTracking()
+            LibraryUser libraryUser = await _microLibraryContext.LibraryUsers.AsNoTracking()
                 .Where(x => x.Id == id && !x.IsDeleted)
                 .Include(x => x.LibraryUserContacts).FirstOrDefaultAsync();
 
@@ -103,15 +99,15 @@ namespace MicroLibrary.Service.Services
                 Oib = libraryUserDto.Oib,
             };
 
-            await microLibraryContext.LibraryUsers.AddAsync(libraryUser);
-            await microLibraryContext.SaveChangesAsync();
+            await _microLibraryContext.LibraryUsers.AddAsync(libraryUser);
+            await _microLibraryContext.SaveChangesAsync();
 
-            return mapper.Map<LibraryUserDto>(libraryUser);
+            return _mapper.Map<LibraryUserDto>(libraryUser);
         }
 
         public async Task UpdateLibraryUser(LibraryUserDto libraryUserDto)
         {
-            LibraryUser libraryUser = await microLibraryContext.LibraryUsers.FirstOrDefaultAsync(x => x.Id == libraryUserDto.Id && !x.IsDeleted);
+            LibraryUser libraryUser = await _microLibraryContext.LibraryUsers.FirstOrDefaultAsync(x => x.Id == libraryUserDto.Id && !x.IsDeleted);
 
             if (libraryUser is not null)
             {
@@ -122,18 +118,18 @@ namespace MicroLibrary.Service.Services
                 libraryUser.City = libraryUserDto.City;
             }
 
-            await microLibraryContext.SaveChangesAsync();
+            await _microLibraryContext.SaveChangesAsync();
         }
 
         public async Task DeleteLibraryUser(int id)
         {
-            LibraryUser libraryUser = await microLibraryContext.LibraryUsers.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
+            LibraryUser libraryUser = await _microLibraryContext.LibraryUsers.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
 
             if (libraryUser is not null)
             {
                 libraryUser.IsDeleted = true;
 
-                await microLibraryContext.SaveChangesAsync();
+                await _microLibraryContext.SaveChangesAsync();
             }
         }
     }
